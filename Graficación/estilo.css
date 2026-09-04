@@ -1,0 +1,169 @@
+/* ==========================================================
+   ESTILOS GENERALES DE LA PÁGINA
+   ========================================================== */
+
+/*
+   Cambiamos el color de fondo de toda la página.
+*/
+body {
+
+    background-color: #f5f5f5;
+
+}
+
+
+/* ==========================================================
+   TARJETA PRINCIPAL
+   ========================================================== */
+
+/*
+   Definimos el ancho máximo de la tarjeta.
+*/
+.tarjeta {
+
+    max-width: 700px;
+
+}
+
+
+/* ==========================================================
+   RECUADRO DEL COLOR
+   ========================================================== */
+
+/*
+   Este elemento será el encargado de mostrar
+   visualmente el color seleccionado.
+*/
+.color-box {
+
+    /* Ancho */
+    width: 100%;
+
+    /* Alto */
+    height: 220px;
+
+    /*
+       Color inicial.
+
+       RGB:
+       Rojo = 0
+       Verde = 0
+       Azul = 0
+
+       Por lo tanto, inicialmente tenemos negro.
+    */
+    background-color: rgb(0, 0, 0);
+
+
+    /*
+       Redondeamos las esquinas.
+    */
+    border-radius: 15px;
+
+
+    /*
+       Centramos el código hexadecimal
+       horizontal y verticalmente.
+    */
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    /*
+       Color del texto.
+    */
+    color: white;
+
+
+    /*
+       Tamaño del texto hexadecimal.
+    */
+    font-size: 30px;
+
+
+    /*
+       Texto en negritas.
+    */
+    font-weight: bold;
+
+
+    /*
+       Hace que el cambio de color sea
+       ligeramente más suave.
+    */
+    transition: background-color 0.2s ease;
+
+}
+
+
+/* ==========================================================
+   CÓDIGO HEXADECIMAL DENTRO DEL RECUADRO
+   ========================================================== */
+
+/*
+   Creamos un fondo semitransparente detrás
+   del código hexadecimal.
+*/
+#hexColor {
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+}
+
+
+/* ==========================================================
+   ETIQUETAS DE LOS CONTROLES
+   ========================================================== */
+
+/*
+   Ponemos las etiquetas en negritas.
+*/
+.form-label {
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================================
+   COLORES DE LOS VALORES RGB
+   ========================================================== */
+
+/*
+   El número correspondiente al rojo
+   aparecerá en color rojo.
+*/
+#valorRojo {
+
+    color: red;
+
+}
+
+
+/*
+   El número correspondiente al verde
+   aparecerá en color verde.
+*/
+#valorVerde {
+
+    color: green;
+
+}
+
+
+/*
+   El número correspondiente al azul
+   aparecerá en color azul.
+*/
+#valorAzul {
+
+    color: blue;
+
+}

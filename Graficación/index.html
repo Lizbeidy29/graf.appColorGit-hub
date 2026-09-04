@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- =====================================================
+         CONFIGURACIÓN BÁSICA DEL DOCUMENTO
+         ===================================================== -->
+
+    <!-- Permite utilizar caracteres especiales como:
+         á, é, í, ó, ú, ñ, etc. -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea adaptable a celulares,
+         tablets y computadoras -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Selector de Color RGB</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+         ===================================================== -->
+
+    <!-- Hoja de estilos de Bootstrap.
+         Nos permite utilizar clases como:
+         container, card, btn, text-center, etc. -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         NUESTRO ARCHIVO CSS
+         ===================================================== -->
+
+    <!-- Conectamos nuestro archivo de estilos -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+         ===================================================== -->
+
+    <!-- "container" es una clase de Bootstrap que centra
+         y limita el ancho del contenido -->
+
+    <!-- "py-5" agrega espacio vertical -->
+    <div class="container py-5">
+
+
+        <!-- =================================================
+             TARJETA PRINCIPAL
+             ================================================= -->
+
+        <!-- Card de Bootstrap -->
+        <div class="card shadow mx-auto tarjeta">
+
+
+            <!-- Contenido de la tarjeta -->
+            <div class="card-body">
+
+
+                <!-- =================================================
+                     TÍTULO
+                     ================================================= -->
+
+                <h1 class="text-center mb-3">
+                    Selector de Color RGB
+                </h1>
+
+                <p class="text-center text-muted mb-4">
+                    Modifica los valores de rojo, verde y azul
+                    para obtener un color.
+                </p>
+
+
+                <!-- =================================================
+                     RECUADRO DEL COLOR
+                     ================================================= -->
+
+                <!-- Este div funcionará como el recuadro
+                     que mostrará el color seleccionado -->
+
+                <div id="colorBox" class="color-box mb-4">
+
+                    <!-- Aquí aparecerá el código hexadecimal -->
+                    <span id="hexColor">
+                        #000000
+                    </span>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTROL ROJO
+                     ================================================= -->
+
+                <div class="mb-4">
+
+                    <!-- Etiqueta del control -->
+                    <label for="rojo" class="form-label">
+
+                        <!-- Nombre del color -->
+                        Rojo (R):
+
+                        <!-- Aquí JavaScript mostrará
+                             el valor actual -->
+                        <span id="valorRojo">
+                            0
+                        </span>
+
+                    </label>
+
+
+                    <!-- Control deslizante -->
+                    <input
+                        type="range"
+                        class="form-range"
+                        id="rojo"
+                        min="0"
+                        max="255"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTROL VERDE
+                     ================================================= -->
+
+                <div class="mb-4">
+
+                    <label for="verde" class="form-label">
+
+                        Verde (G):
+
+                        <!-- Valor actual del verde -->
+                        <span id="valorVerde">
+                            0
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="range"
+                        class="form-range"
+                        id="verde"
+                        min="0"
+                        max="255"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTROL AZUL
+                     ================================================= -->
+
+                <div class="mb-4">
+
+                    <label for="azul" class="form-label">
+
+                        Azul (B):
+
+                        <!-- Valor actual del azul -->
+                        <span id="valorAzul">
+                            0
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="range"
+                        class="form-range"
+                        id="azul"
+                        min="0"
+                        max="255"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     INFORMACIÓN DEL COLOR
+                     ================================================= -->
+
+                <div class="text-center mt-4">
+
+
+                    <!-- Código RGB -->
+                    <h4>
+                        Código RGB
+                    </h4>
+
+                    <p
+                        id="rgbColor"
+                        class="fs-5"
+                    >
+                        rgb(0, 0, 0)
+                    </p>
+
+
+                    <!-- Código hexadecimal -->
+                    <h4>
+                        Código Hexadecimal
+                    </h4>
+
+                    <p
+                        id="hexColorText"
+                        class="fs-5 fw-bold"
+                    >
+                        #000000
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <!-- Conectamos nuestro archivo JavaScript.
+         Se coloca al final para que primero se cargue
+         todo el contenido HTML. -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
