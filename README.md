@@ -3,6 +3,6 @@
 ### Graficación
 Practica: **Publicación colaboratica de código fuente (HTML+CSS+JS)**
 
-Autor:**Luis Alejandro Santana Valadez**
+Autor:**Lizbeidy Martinez Vargas**
 
 Fecha:**4 septiembre 2026**
